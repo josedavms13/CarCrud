@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./sources/css/fontColors.css">
     <link rel="stylesheet" href="./sources/css/mediaQuerys.css">
 
-
+    <script src="https://kit.fontawesome.com/dec3a11496.js" crossorigin="anonymous"></script>
 
     <title>Cars</title>
 </head>
@@ -23,60 +23,119 @@
         <h2>Find your car here!</h2>
     </header>
 
-    <div class="description-container normal-font-color global-margin mt-3">
+    <div class="description-container normal-font-color global-margin mt-3" id="Par-Description">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia, sapiente totam voluptatibus minima distinctio tempore <br> ipsam, deleniti fugiat <br> cum quod magnam ea repellat asperiores voluptate eligendi repudiandae sunt perspiciatis.
         </p>
     </div>
-    <div class="global-margin mt-4">
-        <button class="continue-btn btn btn-outline-light" onclick="ShowPannel('Card-section-pannel')">See more</button>
+    <div class="main-button-section global-margin mt-4 d-flex flex-column ">
+        <button id="Show-More-Button" class="continue-btn btn btn-outline-light" onclick="switchShowButton()">Show me more !</button>
+        <button class="add-car-button  btn btn btn-outline-light mt-4 d-none" id="Add-car-button" onclick="ShowPannel('New-car-form')">Add your own</button>
     </div>
 
 
     <!-- #region CAR CARD ======================================-->
     
-    <section class="cars-section global-margin" id= "Card-section-pannel"></section>>
+    <section class="cars-section global-margin p-3 d-none" id= "Card-section-pannel">
 
-        <div class="car-card">
-            <div class="image-container">
+        
+        <div class="card-blureprint">
 
-            </div>
-
-
-            <div class="info-container">
+            <div class="tittle-container d-flex align-items-center">
+    
                 <h4>KIA SPORTAGE</h4>
-                <div class="details-panel">
-                    <div class="left-side-panel">
-                        <ul>
-                            <li>Marca: Kia</li>
-                            <li>Modelo: Sportage</li>
-                            <li>Color: Negro</li>
-                        </ul>
-                    </div>
-                    <div class="right-side-panel">
-                        <ul>
-                            <li>Precio : $20.000 USD</li>
-                            <li>Año: 2016</li>
-                            <li><button>Ver mas fotos</button></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
+                <div class="card-container d-flex" id="Card-Container">
+    
+                    <!-- #region CHANGES DYNAMICALLY -->
+                    
+                            <!-- #region Info pannel -->
+                    <div class="text-info-container d-flex px-2">
+                        <div class="a-text-container pe-2">
+                            <ul>
+                                <li>Marca: Kia</li>
+                                <li class="mt-2">Modelo: Sportage</li>
+                                <li class="mt-2">Color: Negro</li>
+                            </ul>
+                        </div>
+        
+                        <div class="b-text-container px-3 me-4">
+                            <ul>
+                                <li class="mt-2">Precio : $20.000</li>
+                                <li class="mt-2">Año: 2016</li>
+                            </ul>    
+                        </div>  
+                        
+                        
+                        <div class="edit-delete-buttons-container lg-show-hide">
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                        </div>
 
-            <div class="buttons-container">
-                <button>
-                    edi
-                </button>
-                <button>
-                    del
-                </button>
-            </div>
+
+                    </div>
+    
+                    <div class="image-container">
+                        <img src="./sources/images/CarsImages/KIA-Sportage.jpg" alt="kia sportage negra">
+                        
+                        <div class="edit-delete-buttons-container s-show-hide">
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                            <!-- #endregion -->
+
+                    <!-- #endregion -->
+
+                </div>
+
+                
+
+
 
         </div>
+
+
+ 
 
     </section>   
     <!-- #endregion -->
 
+
+    <div class="form-section d-none" id="New-car-form">
+        <form action="" class="input-form-section">
+            <h2>Fill the information</h2>
+
+            <label for="brand">Brand</label>
+            <input type="text" required name="brand" id="Brand-input" placeholder="Type brand...">
+
+            <label for="model">Model</label>
+            <input type="text" required id="Model" placeholder="Type model...">
+
+            <label for="color">Color</label>
+            <input type="text" required name="color" id="Color" placeholder="Type color...">
+
+            <label for="price">Price</label>
+            <input type="number" required name="price" id="Price" placeholder="Set the price...">
+
+            <label for="year">Year</label>
+            <input type="number"  required name="year" id="Year" placeholder="Type year...">
+
+            <button class="add-image-btn btn btn-outline-light" >Add Image</button>
+
+        </form>
+
+
+    </div>
 
 
 

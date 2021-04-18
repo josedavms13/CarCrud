@@ -1,0 +1,100 @@
+
+
+
+@media(min-width: 500px){
+
+
+    *{
+        transition: all 0.3s;
+    }
+
+
+    body{
+
+        background-position:0%;
+        background-size: 300vh;
+    }   
+
+
+    
+    .global-margin{
+        margin: 0%;
+        padding: 10px;
+    }
+
+    .description-container{
+        /* background-color: aqua; */
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 0.7rem;
+        
+    }
+
+    .continue-btn{
+        width: 20%;
+    }
+    
+    .add-car-button{
+        width: 20%;
+    }
+
+    .card-container{
+        flex-direction: row-reverse;
+    }
+
+    .image-container>img:hover{
+        margin-left: 10vw;
+        width: 150%;
+    }
+
+
+    .text-info-container{
+        margin-left: 2vw;
+        flex-direction: row;
+        padding-top: 5%;
+        box-sizing: border-box;
+        font-size: 2vw;
+    }
+    
+
+    .main-button-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lg-show-hide{
+        margin-top: 40%;
+        display: flex;
+    }
+
+    .s-show-hide{
+        display: none;
+    }
+
+    .a-text-container{
+        border-right: white solid 1px;
+    }
+}
+
+
+@media(min-width: 500px) and (max-width: 750px){
+
+    .lg-show-hide{
+        margin-top: -30%;
+        margin-left: -50%;
+        display: flex;
+    }
+
+    .text-info-container{
+        flex-direction: row;
+        padding-top: 5%;
+        box-sizing: border-box;
+        font-size: 2vw;
+    }
+
+
+}

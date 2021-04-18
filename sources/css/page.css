@@ -3,7 +3,13 @@ body{
     background-repeat: no-repeat;
     background-position-x: -400px;
     background-size: 200vh;
+
+
 }
+
+
+
+/* #region HEADER SECTION ==================== */
 header{
     text-align: center;
     margin: auto;
@@ -41,6 +47,123 @@ header>h2{
     width: 40vw;
 }
 
+/* #endregion */
+
+
+/* #region CARDS SECTION ===================== */
+.add-car-button{
+    width: 40vw;
+}
+
+.card-blureprint{
+    border: white solid 1px;
+    border-radius: 10px;
+
+}
+
+.tittle-container{
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    /* background-color: rgba(0, 0, 0, 0.699); */
+    height: 10vh;
+    border-radius: 10px;
+
+    justify-content: center;
+}
+
+.tittle-container>h4{
+    border-bottom: white solid 1px;
+}
 .cars-section{
-    background-color: azure;
+
+    /* background-color: azure; */
+
+    background-color: rgba(0, 0, 0, 0.671);
+
+
+}
+
+.card-container{
+    border-radius: 10px;
+    padding: 1%
+}
+
+.text-info-container{
+    color: white;
+    padding-top: 2%;
+    /* background-color: aquamarine; */
+    width: 50%;
+    font-size: 4vw;
+    flex-direction: column;
+}
+
+.image-container{
+    /* background-color: antiquewhite; */
+    width: 50%;
+}
+
+.image-container>img{
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.image-container>img:hover{
+    margin-left: -20vw;
+    width: 150%;
+}
+
+
+.edit-delete-buttons-container{
+
+    /* background-color: aliceblue; */
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lg-show-hide{
+    margin-top: 40%;
+    display: none;
+}
+
+.s-show-hide{
+    display: flex;
+}
+
+
+/* #endregion  */
+
+
+.input-form-section{
+    
+    position: fixed;
+    top: 5vh;
+    left: 10vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 15px;
+    width: 80%;
+    background-color: rgb(1, 70, 131);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input{
+    width: 50vw;
+}
+
+label{
+    margin-top: 10px;
+}
+
+.add-image-btn{
+    margin-top: 3vh;
 }
