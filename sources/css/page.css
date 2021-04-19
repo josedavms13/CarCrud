@@ -1,9 +1,7 @@
 body{
     background-image: url(../images/BG-image.jpeg);
-    background-repeat: no-repeat;
-    background-position-x: -400px;
-    background-size: 200vh;
-
+    background-position:0%;
+    background-size: 500%;
 
 }
 
@@ -136,13 +134,14 @@ header>h2{
 
 /* #endregion  */
 
+/* #region INPUT FORM SECTION */
 
 .input-form-section{
     
     position: fixed;
-    top: 5vh;
+    top: 1vh;
     left: 10vw;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
     border-radius: 15px;
     width: 80%;
@@ -156,6 +155,13 @@ header>h2{
 
 }
 
+.input-form-section >.close-from-button{
+    font-size: .2rem;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
 input{
     width: 50vw;
 }
@@ -167,3 +173,7 @@ label{
 .add-image-btn{
     margin-top: 3vh;
 }
+
+
+/* #endregion input form section */
+

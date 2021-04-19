@@ -30,14 +30,16 @@
     </div>
     <div class="main-button-section global-margin mt-4 d-flex flex-column ">
         <button id="Show-More-Button" class="continue-btn btn btn-outline-light" onclick="switchShowButton()">Show me more !</button>
-        <button class="add-car-button  btn btn btn-outline-light mt-4 d-none" id="Add-car-button" onclick="ShowPannel('New-car-form')">Add your own</button>
+        
+        <button class="add-car-button  btn btn btn-outline-light mt-4 d-none" id="Add-car-button" onclick="ShowPannel('New-car-form'), switchtoSubmitBtn()">Add your own</button>
+  
     </div>
 
 
     <!-- #region CAR CARD ======================================-->
     
     <section class="cars-section global-margin p-3 d-none" id= "Card-section-pannel">
-        <div class="card-blureprint">
+        <div class="card-blureprint mt-5">
 
             <div class="tittle-container d-flex align-items-center">
     
@@ -66,11 +68,11 @@
                         
                         
                         <div class="edit-delete-buttons-container lg-show-hide">
-                            <button class="btn btn-outline-light mx-1">
-                                <i class="far fa-edit"></i>
+                            <button class="btn btn-outline-light mx-1" onclick="ShowPannel('New-car-form')" onkeydown="">
+                                <i class="far fa-edit" ></i>
                             </button>
                             <button class="btn btn-outline-light mx-1">
-                                <i class="far fa-trash-alt"></i>
+                                <i class="far fa-trash-alt" onclick="deleteCar(0)"></i>
                             </button>
                         </div>
 
@@ -101,9 +103,11 @@
     </section>
     <!-- #endregion -->
 
+    <!-- #region NEW / EDIT CARD FORM -->
 
     <div class="form-section d-none" id="New-car-form">
         <form action="" class="input-form-section">
+            <button class="close-from-button btn btn-outline-light" type="button" onsubmit="event.preventDefault()" onclick="HidePannel('New-car-form')"> X </button>
             <h2>Fill the information</h2>
 
             <label for="brand">Brand</label>
@@ -123,14 +127,18 @@
 
             <label for="image-link-input">Image url</label>
             <input type="text" name="image-link-input" id="Image-link-input" placeholder="www...">
-            <button class="btn btn-success mt-5" onsubmit="event.preventDefault()" onclick="HidePannel('New-car-form'), createNewCar()">Submit</button>
+
+
+            <button id="Submit-edit-btn" type="submit" class="mt-5" onsubmit="event.preventDefault()" onclick="SubmitButtonFunctions(), HidePannel('New-car-form')"></button>
+        
+        
         </form>
 
 
     </div>
 
 
-
+    <!-- #endregion new/ edit card -->
 
     <script src="./index.js"></script>
 </body>
