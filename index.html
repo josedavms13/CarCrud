@@ -106,7 +106,7 @@
     <!-- #region NEW / EDIT CARD FORM -->
 
     <div class="form-section d-none" id="New-car-form">
-        <form action="" class="input-form-section">
+        <form action="" class="input-form-section" onsubmit="event.preventDefault()">
             <button class="close-from-button btn btn-outline-light" type="button" onsubmit="event.preventDefault()" onclick="HidePannel('New-car-form')"> X </button>
             <h2>Fill the information</h2>
 
@@ -129,7 +129,7 @@
             <input type="text" name="image-link-input" id="Image-link-input" placeholder="www...">
 
 
-            <button id="Submit-edit-btn" type="submit" class="mt-5" onsubmit="event.preventDefault()" onclick="SubmitButtonFunctions(), HidePannel('New-car-form')"></button>
+            <button id="Submit-edit-btn" type="submit" class="mt-5" onclick="SubmitButtonFunctions(), HidePannel('New-car-form')"></button>
         
         
         </form>

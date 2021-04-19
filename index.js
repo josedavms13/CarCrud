@@ -348,7 +348,7 @@ function showCurrentInfoInEditForm(){
 
     price = document.getElementById('Price').value = price
     let year = document.getElementById('Year').value = Items[IndexOfId()].Year;
-    let image = document.getElementById('Image-link-input').value = Items[IndexOfId()].Image;
+    let image = document.getElementById('Image-link-input').value = Items[IndexOfId()].Picture;
 
     const toLog = [brand, model, color, price, year, image]
     console.log(toLog);
