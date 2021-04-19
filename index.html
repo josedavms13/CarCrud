@@ -37,8 +37,6 @@
     <!-- #region CAR CARD ======================================-->
     
     <section class="cars-section global-margin p-3 d-none" id= "Card-section-pannel">
-
-        
         <div class="card-blureprint">
 
             <div class="tittle-container d-flex align-items-center">
@@ -92,22 +90,15 @@
                         </div>
 
                     </div>
-                            <!-- #endregion -->
+                            <!-- #endregion Dinamic-->
 
                     <!-- #endregion -->
 
                 </div>
-
-                
-
-
-
         </div>
 
-
- 
-
-    </section>   
+        
+    </section>
     <!-- #endregion -->
 
 
@@ -130,8 +121,9 @@
             <label for="year">Year</label>
             <input type="number"  required name="year" id="Year" placeholder="Type year...">
 
-            <button class="add-image-btn btn btn-outline-light" >Add Image</button>
-
+            <label for="image-link-input">Image url</label>
+            <input type="text" name="image-link-input" id="Image-link-input" placeholder="www...">
+            <button class="btn btn-success mt-5" onsubmit="event.preventDefault()" onclick="HidePannel('New-car-form'), createNewCar()">Submit</button>
         </form>
 
 

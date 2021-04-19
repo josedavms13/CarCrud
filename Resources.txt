@@ -1,0 +1,66 @@
+Car Card
+
+                    
+        <div class="card-blureprint">
+
+            <div class="tittle-container d-flex align-items-center">
+    
+                <h4>KIA SPORTAGE</h4>
+            </div>
+                <div class="card-container d-flex" id="Card-Container">
+    
+                    <!-- #region CHANGES DYNAMICALLY -->
+                    
+                            <!-- #region Info pannel -->
+                    <div class="text-info-container d-flex px-2">
+                        <div class="a-text-container pe-2">
+                            <ul>
+                                <li>Marca: Kia</li>
+                                <li class="mt-2">Modelo: Sportage</li>
+                                <li class="mt-2">Color: Negro</li>
+                            </ul>
+                        </div>
+        
+                        <div class="b-text-container px-3 me-4">
+                            <ul>
+                                <li class="mt-2">Precio : $20.000</li>
+                                <li class="mt-2">Año: 2016</li>
+                            </ul>    
+                        </div>  
+                        
+                        
+                        <div class="edit-delete-buttons-container lg-show-hide">
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+    
+                    <div class="image-container">
+                        <img src="./sources/images/CarsImages/KIA-Sportage.jpg" alt="kia sportage negra">
+                        
+                        <div class="edit-delete-buttons-container s-show-hide">
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="btn btn-outline-light mx-1">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                            <!-- #endregion Dinamic-->
+
+                    <!-- #endregion -->
+
+                </div>
+        </div>
+
+
+ 
+
